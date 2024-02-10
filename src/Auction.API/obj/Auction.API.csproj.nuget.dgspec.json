@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mhayk/mhayk/Auction/src/Auction.API/Auction.API.csproj": {}
+    "C:\\Users\\eu\\mhayk\\c#-projects\\auction-web-api\\src\\Auction.API\\Auction.API.csproj": {}
   },
   "projects": {
-    "/Users/mhayk/mhayk/Auction/src/Auction.API/Auction.API.csproj": {
+    "C:\\Users\\eu\\mhayk\\c#-projects\\auction-web-api\\src\\Auction.API\\Auction.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mhayk/mhayk/Auction/src/Auction.API/Auction.API.csproj",
+        "projectUniqueName": "C:\\Users\\eu\\mhayk\\c#-projects\\auction-web-api\\src\\Auction.API\\Auction.API.csproj",
         "projectName": "Auction.API",
-        "projectPath": "/Users/mhayk/mhayk/Auction/src/Auction.API/Auction.API.csproj",
-        "packagesPath": "/Users/mhayk/.nuget/packages/",
-        "outputPath": "/Users/mhayk/mhayk/Auction/src/Auction.API/obj/",
+        "projectPath": "C:\\Users\\eu\\mhayk\\c#-projects\\auction-web-api\\src\\Auction.API\\Auction.API.csproj",
+        "packagesPath": "C:\\Users\\eu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eu\\mhayk\\c#-projects\\auction-web-api\\src\\Auction.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/mhayk/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\eu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,10 +43,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -66,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/mhayk/.vscode-dotnet-sdk/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
