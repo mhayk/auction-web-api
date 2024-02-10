@@ -4,9 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Auction.API.Controllers;
 
-[Route("[controller]")]
-[ApiController]
-public class AuctionController : ControllerBase
+public class AuctionController : AuctionBaseController
 {
     [HttpGet]
     [ProducesResponseType(typeof(AuctionEntity), StatusCodes.Status200OK)]
