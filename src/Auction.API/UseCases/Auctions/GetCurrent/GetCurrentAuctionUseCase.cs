@@ -1,17 +1,21 @@
 ﻿using Auction.API.Entities;
+using Auction.API.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace Auction.API.UseCases.Auctions.GetCurrent;
 
 public class GetCurrentAuctionUseCase
 {
-    public AuctionEntity Execute()
+    public AuctionEntity? Execute()
     {
-        return new AuctionEntity
-        {
-            Id = 1,
-            Name = "Auction 1",
-            Starts = DateTime.Now,
-            Ends = DateTime.Now.AddDays(7)
-        };
+        var repository = new AuctionDbContext();
+
+        var today = DateTime.Now;
+
+
+        return repository
+            .Auctions
+            .Include(auction => auction.Items)
+            .FirstOrDefault(auction => auction.Starts <= today && auction.Ends >= today);
     }
 }
