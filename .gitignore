@@ -1,1 +1,3 @@
 .vs
+src/Auction.API/obj/
+src/Auction.API/bin/
